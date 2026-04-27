@@ -16,9 +16,6 @@ canonical "latest".
 
 ## v2.1.2 — first public binary release
 
-ProtoCloack2 inaugural public binary distribution. There is no prior
-public history; entries below describe the surface this release ships.
-
 ### Components
 
 - `server`: Stratum v1 mining proxy with web UI, pool management,
