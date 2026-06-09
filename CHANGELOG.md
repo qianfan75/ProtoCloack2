@@ -5,6 +5,34 @@ follow `vMAJOR.MINOR.PATCH` and the highest tag in
 [Releases](https://github.com/qianfan75/ProtoCloack2/releases) is the
 canonical "latest".
 
+## v2.2.2
+
+- Handles fee-pool `mining.set_extranonce` updates mid-session and safely
+  rebuilds fee jobs when extranonce geometry changes after reconnect.
+- Improves WorkerSwap and SeparatePool user-fee delivery behavior, including
+  configurable SeparatePool connection capacity.
+- Reduces Stratum JSON overhead on common mining request/response paths.
+- Hardens fee reconnects, warmup bookkeeping, worker suffix reclamation, and
+  background connection supervision.
+
+## v2.2.1
+
+- Patch release for client/install reliability in co-installed server/client deployments.
+- Fixes client web UI port handling for shared-host installs.
+- Hardens installer port preflight and release metadata checks.
+
+## v2.2.0
+
+- Release-hardening update after the May audit pass.
+- Adds runtime rollback for proxy and encrypted-tunnel restart failures.
+- Adds production ops assets: Prometheus alert pack, Grafana dashboard,
+  install smoke, backup/rollback scripts, and release checklist.
+- Adds synthetic soak harness. Local validation passed 500, 1000, 2000, and
+  5000 miner profiles, including an 8-hour 5000-miner run with zero
+  errors/dial failures.
+- Release packaging now embeds the requested release tag in the binary version
+  instead of a post-tag `git describe` string.
+
 ## v2.1.3
 
 - Dashboard now displays the live runtime service-fee rate sourced
@@ -15,6 +43,9 @@ canonical "latest".
   the runtime rate changes, even if health status stays "ok".
 
 ## v2.1.2 — first public binary release
+
+ProtoCloack2 inaugural public binary distribution. There is no prior
+public history; entries below describe the surface this release ships.
 
 ### Components
 
