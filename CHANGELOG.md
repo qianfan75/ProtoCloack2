@@ -5,6 +5,12 @@ follow `vMAJOR.MINOR.PATCH` and the highest tag in
 [Releases](https://github.com/qianfan75/ProtoCloack2/releases) is the
 canonical "latest".
 
+## v2.2.3
+
+- Fixes live pool-connection status refresh on the server ports dashboard.
+- Fixes encrypted-tunnel client status so stale successful dials no longer show
+  as connected without an active tunnel.
+
 ## v2.2.2
 
 - Handles fee-pool `mining.set_extranonce` updates mid-session and safely
