@@ -5,6 +5,17 @@ follow `vMAJOR.MINOR.PATCH` and the highest tag in
 [Releases](https://github.com/qianfan75/ProtoCloack2/releases) is the
 canonical "latest".
 
+## v2.2.4
+
+- Improves dashboard hashrate charts with smoother lines, hidden point markers,
+  and hover tooltips.
+- Makes Workers hashrate display, sorting, details, and CSV export use the same
+  EMA-based values.
+- Adds localized Web UI controls for scale-related server and client connection
+  limits.
+- Fixes server dashboard online-worker counts to reflect live miner sessions.
+- Fixes idle healthy ports staying in the dashboard's initial "starting" state.
+
 ## v2.2.3
 
 - Fixes live pool-connection status refresh on the server ports dashboard.
